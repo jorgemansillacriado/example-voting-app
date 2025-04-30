@@ -1,5 +1,5 @@
 # example-voting-app
-Desarrollo de la app "to do" incluida en el tutorial de Docker estudiando e implementando el S-SDLC
+Desarrollo de la app "example-voting-app" ofrecida como ejemplos de implementación de Docker, estudiando e implementando el S-SDLC.
 
 # Cómo ejecutar la aplicación
 
@@ -7,7 +7,7 @@ Este proyecto contiene una aplicación web para simular votaciones en un sistema
 
 ---
 
-## 🚀 Requisitos
+## Requisitos
 
 - Docker Desktop instalado y corriendo en tu máquina (Windows, macOS o Linux)
 - Git instalado para clonar el repositorio
@@ -31,8 +31,10 @@ o alternativamente
 ///
 docker compose -f 'compose.yml' up -d --build
 
+Recuerda que recibirás un error si Docker no está siendo ejecutado
+
 ### 3. Acceder con tu navegador
-Abre tu navegador y visita http://localhost:80
+Abre tu navegador y visita http://localhost:8080 para votar o http://localhost:8081 para ver los resultados.
 
 ### 4. Detener la app
 Para ello puedes acceder directamente a Docker Desktop y terminar la app

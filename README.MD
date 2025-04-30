@@ -1,5 +1,9 @@
-# example-voting-app
+# Voting-app
 Desarrollo de la app "example-voting-app" ofrecida como ejemplos de implementación de Docker, estudiando e implementando el S-SDLC.
+
+# Contenido
+
+En la carpeta /app se puede encontrar los archivos que conforman la aplicación y permiten ejecutarla. En la carpeta /security se puede encontrar un README.md con información sobre el desarrollo de la aplicación siguiendo S-SDLC y DevSecOps 
 
 # Cómo ejecutar la aplicación
 

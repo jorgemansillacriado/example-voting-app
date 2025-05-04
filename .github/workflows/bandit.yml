@@ -1,0 +1,20 @@
+name: Bandit Security Scan
+
+on:
+  push:
+    branches: [ grupo7-practica2 ]
+  pull_request:
+    branches: [ grupo7-practica2 ]
+
+jobs:
+  bandit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Bandit
+        run: pip install bandit
+
+      - name: Run Bandit
+        run: bandit -r vote worker

@@ -23,7 +23,7 @@ Este proyecto contiene una aplicación web para simular votaciones en un sistema
 ### 1. Clonar este repositorio
 
 [bash]
-git clone --branch grupo7-practica2 https://github.com/jorgemansillacriado/example-voting-app.git 
+git clone --branch grupo7-practica-unidad4 https://github.com/jorgemansillacriado/example-voting-app.git 
 cd example-voting-app/app
 ### 2. Levantar la app con Docker
 Puedes usar dos comandos distintos:

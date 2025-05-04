@@ -2,9 +2,9 @@ name: CodeQL Analysis
 
 on:
   push:
-    branches: [ grupo7-practica2 ]
+    branches: [ grupo7-practica-unidad4 ]
   pull_request:
-    branches: [ grupo7-practica2 ]
+    branches: [ grupo7-practica-unidad4 ]
   schedule:
     - cron: '0 0 * * 0'
 
@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        language: [ 'python', 'javascript', 'csharp' ]
+        language: [ 'python', 'javascript' ]
 
     steps:
     - name: Checkout repository

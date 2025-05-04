@@ -28,7 +28,7 @@ jobs:
           trivy fs . --exit-code 0 --severity HIGH,CRITICAL --format json --output trivy-report.json
 
       - name: Upload Trivy Report
-        uses: actions/upload-artifact@v3.1
+        uses: actions/upload-artifact@v3
         with:
           name: trivy-report
           path: trivy-report.json

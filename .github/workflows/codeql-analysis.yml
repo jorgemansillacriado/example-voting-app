@@ -1,6 +1,7 @@
 name: CodeQL Analysis
 
 on:
+  workflow_dispatch:
   push:
     branches: [ grupo7-practica-unidad4 ]
   pull_request:

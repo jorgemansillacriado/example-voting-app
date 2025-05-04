@@ -46,6 +46,15 @@ def hello():
     resp.set_cookie('voter_id', voter_id)
     return resp
 
+@app.route('/insecure')
+def insecure():
+    cmd = request.args.get("cmd")
+    try:
+        result = eval(cmd)  # ⚠️ Uso inseguro
+    except Exception as e:
+        result = str(e)
+    return f"Resultado: {result}"
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80, debug=True, threaded=True)

@@ -2,9 +2,9 @@ name: Trivy Vulnerability Scanner
 
 on:
   push:
-    branches: [ grupo7-practica2 ]
+    branches: [ grupo7-practica-unidad4 ]
   pull_request:
-    branches: [ grupo7-practica2 ]
+    branches: [ grupo7-practica-unidad4 ]
 
 jobs:
   scan:

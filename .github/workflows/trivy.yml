@@ -22,6 +22,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install trivy
 
-      - name: Scan Dockerfiles
+      - name: Scan Dockerfiles and save report
         run: |
-          trivy fs . --exit-code 0 --severity HIGH,CRITICAL
+          trivy fs . --exit-code 0 --severity HIGH,CRITICAL --format json --output trivy-report.json
+
+      - name: Upload Trivy Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: trivy-report
+          path: trivy-report.json

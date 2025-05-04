@@ -6,7 +6,7 @@ Este informe documenta las modificaciones realizadas sobre la aplicación [examp
 
 ---
 
-## ✅ 1. Técnicas y herramientas de evaluación utilizadas
+##  1. Técnicas y herramientas de evaluación utilizadas
 
 | Técnica / Herramienta | Tipo | Descripción |
 |-----------------------|------|-------------|
@@ -18,7 +18,7 @@ Este informe documenta las modificaciones realizadas sobre la aplicación [examp
 
 ---
 
-## 🛠️ 2. Modificaciones realizadas para forzar detección de fallos
+##  2. Modificaciones realizadas para forzar detección de fallos
 
 | Servicio | Archivo | Modificación | Justificación |
 |----------|---------|--------------|---------------|
@@ -30,7 +30,7 @@ Este informe documenta las modificaciones realizadas sobre la aplicación [examp
 
 ---
 
-## ⚙️ 3. Workflows automatizados en GitHub Actions
+##  3. Workflows automatizados en GitHub Actions
 
 Se añadieron los siguientes workflows bajo `.github/workflows/`:
 
@@ -40,30 +40,30 @@ Se añadieron los siguientes workflows bajo `.github/workflows/`:
 
 ---
 
-## 🔍 4. Resultados obtenidos
+##  4. Resultados obtenidos
 
-### 🛑 Dependabot
+###  Dependabot
 
 | Servicio | Dependencia | Alerta |
 |----------|-------------|--------|
 | `frontend` | `lodash@3.0.0` | CVE-2019-10744, CVE-2021-23337 |
 | `worker` | `Flask==0.10` | Múltiples CVEs (inyección, denegación de servicio) |
 
-### 🧠 CodeQL
+###  CodeQL
 
 | Lenguaje | Hallazgo | Severidad |
 |----------|----------|-----------|
 | Python | Uso de `eval()` en `vote/app.py` | Alta |
 | C# | SQL concatenado sin parámetros en `result` | Alta |
 
-### 🐍 Bandit
+###  Bandit
 
 | Archivo | Línea | Problema detectado |
 |--------|-------|---------------------|
 | `vote/app.py` | Uso de `eval()` | [B307] Use of `eval` detected |
 | `worker/worker.py` | No crítico | - |
 
-### 🐳 Trivy
+###  Trivy
 
 | Imagen | Vulnerabilidades encontradas | Severidad |
 |--------|------------------------------|-----------|

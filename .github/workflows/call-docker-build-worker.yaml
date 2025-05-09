@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'grupo7-practica-unidad-4'
     # only build when important files change
     paths:
       - 'worker/**'

@@ -69,3 +69,7 @@ Se añadieron los siguientes workflows bajo `.github/workflows/`:
 |--------|------------------------------|-----------|
 | `redis:3.0` | CVE-2015-4335, CVE-2018-12326 | Alta |
 | Imágenes Python | CVEs en `fl
+
+### dependabot
+como se utiliza node.js y gestiona dependencias con npm, configuramos dependabot para que se actualice automáticamente a las últimas versiones seguras de las 
+Dependabot despues de su activacion comenzaa a monitorear las dependencias y creará solicitudes de extraccion cuando detecte actualizaciones disponibles.
